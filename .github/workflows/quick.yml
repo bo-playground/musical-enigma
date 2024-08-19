@@ -27,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     if: always()
     needs:
+      - fail
       - ok
       - skip
     steps:
